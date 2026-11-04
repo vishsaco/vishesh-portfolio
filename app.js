@@ -3,7 +3,7 @@
   printButton?.addEventListener("click", () => window.print());
 
   const revealItems = document.querySelectorAll(
-    ".identity, .portrait-sticker, .bio-block, .tools-block, .resume-section, .timeline-item, .bilingual-skills li, .software"
+    ".identity, .portrait-sticker, .bio-block, .tools-block, .resume-section, .timeline-item, .bilingual-skills li, .software, .work-card"
   );
 
   if (!("IntersectionObserver" in window) ||
