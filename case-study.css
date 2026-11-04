@@ -33,3 +33,11 @@
 @media(max-width:720px){.case-shell{width:calc(100% - 14px);margin:7px auto 24px;padding:0 18px 18px}.case-nav{font-size:7px;min-height:47px}.case-nav span{display:none}.case-hero{grid-template-columns:1fr;gap:19px;padding:36px 0 26px}.case-intro{margin:0}.project-meta{gap:8px}.project-meta dd{font-size:10px}.case-section{grid-template-columns:1fr;gap:14px;padding:31px 0}.principles{grid-template-columns:1fr}.principles article{min-height:0}.case-end{align-items:flex-start;flex-direction:column}.case-footer{font-size:7px}.deliverables{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 @media print{body{background:#fff}.case-shell{width:100%;margin:0;box-shadow:none}.case-nav,.contact-button{display:none}.case-section{break-inside:avoid}}
+
+/* Vector case-study artwork: preserve sharp edges and allow full-size viewing */
+.hero-board{padding:14px;background:#e7e2d8;border:1px solid #d0cabe}
+.board-open{display:block;position:relative;cursor:zoom-in;text-decoration:none;overflow:hidden;background:#f5f0e9}
+.board-open img{display:block;width:100%;height:auto;max-width:100%;object-fit:contain;image-rendering:auto}
+.board-open>span{position:absolute;right:13px;bottom:13px;background:#141b18ed;color:#fff;padding:10px 13px;font:8px var(--mono);letter-spacing:.09em;opacity:0;transform:translateY(5px);transition:opacity .25s,transform .25s}
+.board-open:hover>span{opacity:1;transform:translateY(0)}
+@media(max-width:720px){.board-open>span{opacity:1;transform:none;right:8px;bottom:8px;padding:7px 9px;font-size:7px}}
