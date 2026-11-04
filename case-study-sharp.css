@@ -45,7 +45,7 @@
 /* Crisp, cache-busted scalable artwork */
 .hero-board{overflow:hidden}
 .board-open{background:#f5f0e9}
-.board-open img{display:block;width:100%;height:auto;max-width:none;object-fit:contain;filter:none;transform:none;backface-visibility:hidden}
+.board-open img{display:block;width:100%;height:auto;max-width:1280px;margin:0 auto;object-fit:contain;filter:none;transform:none;backface-visibility:hidden}
 .board-open:hover img{filter:none;transform:none}
 .board-open:focus-visible{outline:3px solid #b49316;outline-offset:3px}
 .board-open>span{opacity:1;transform:none}
