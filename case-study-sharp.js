@@ -56,6 +56,26 @@ set("meta-type",p.type);set("meta-role",p.role);set("meta-scope",p.scope);
 set("board-caption",p.caption);set("brief-title",p.briefTitle);set("brief-text",p.brief);set("solution-text",p.solution);
 set("visual-title",p.visualTitle);set("visual-text",p.visual);set("thinking-text",p.thinking);set("takeaway",p.takeaway);
 const image=document.getElementById("board-image");image.src="./"+p.image;image.alt=p.alt;const boardLink=document.getElementById("board-open");if(boardLink)boardLink.href="./"+p.image;
+if(id==="watch"){
+  const loadOriginalBoard=async()=>{
+    const parts=await Promise.all(Array.from({length:12},async(_,i)=>{
+      const part=String(i+1).padStart(2,"0");
+      const response=await fetch("./assets/too-much-watch/part-"+part+".txt?rev=20261105-original1",{cache:"no-store"});
+      if(!response.ok)throw new Error("Could not load artwork segment "+part);
+      return (await response.text()).trim();
+    }));
+    const originalUrl="data:image/webp;base64,"+parts.join("");
+    const preview=new Image();
+    preview.onload=()=>{
+      image.src=originalUrl;
+      image.alt="Original full-resolution Too Much To Watch project presentation board";
+      if(boardLink)boardLink.href=originalUrl;
+    };
+    preview.onerror=()=>console.error("The original case-study image could not be decoded.");
+    preview.src=originalUrl;
+  };
+  loadOriginalBoard().catch(error=>console.error("Original board loading failed:",error));
+}
 const palette=document.getElementById("palette");
 p.palette.forEach(([name,hex])=>{const el=document.createElement("div");el.className="swatch";const swatch=document.createElement("i");swatch.style.backgroundColor=hex;const label=document.createElement("b");label.textContent=name;const code=document.createElement("small");code.textContent=hex;el.append(swatch,label,code);palette.append(el);});
 const list=document.getElementById("deliverables");
