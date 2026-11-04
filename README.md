@@ -2,11 +2,15 @@
 
 A responsive, animated portfolio and resume built with HTML, CSS and vanilla JavaScript.
 
-## Publish
+## One-time GitHub Pages setup
 
-This repository includes a GitHub Actions workflow to deploy the site to GitHub Pages.
+1. Open **Settings → Pages** in this repository.
+2. Under **Build and deployment → Source**, choose **GitHub Actions**.
+3. Save. Then open **Actions → Deploy portfolio to GitHub Pages** and select **Run workflow** on the `main` branch if the first push happened before Pages was enabled.
 
-Once the first workflow run succeeds, the portfolio will be available at:
+The repository includes the deployment workflow at `.github/workflows/pages.yml`.
+
+When deployment succeeds, the portfolio will be available at:
 
 https://vishsaco.github.io/vishesh-portfolio/
 
@@ -14,6 +18,6 @@ https://vishsaco.github.io/vishesh-portfolio/
 
 - Editorial grid-paper aesthetic and torn-paper inspired sections
 - CSS 360° revolving pink-shirt model treatment
-- Central portrait using the GitHub profile avatar
+- Your portrait, used on the rotating model and central portrait
 - About, tools, education, experience and selected projects
 - Responsive layout and print/save-to-PDF control
