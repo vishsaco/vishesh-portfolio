@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<defs>
+ <pattern id="papergrid" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M30 0H0V30" fill="none" stroke="#ded9cc" stroke-width="1"/></pattern>
+ <linearGradient id="forest" x2="1" y2="1"><stop stop-color="#204a37"/><stop offset="1" stop-color="#092d21"/></linearGradient>
+ <linearGradient id="clay" x2="1"><stop stop-color="#8b725b"/><stop offset=".5" stop-color="#d3bda0"/><stop offset="1" stop-color="#846c53"/></linearGradient>
+ <filter id="shade" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="14" stdDeviation="14" flood-color="#122116" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1800" height="1200" fill="#f2efe6"/><rect width="1800" height="1200" fill="url(#papergrid)" opacity=".6"/>
+<text x="74" y="72" font-family="Arial" font-size="22" letter-spacing="6" fill="#304a35">CONTEMPORARY CERAMICS &amp; OBJECTS</text>
+<text x="1726" y="72" text-anchor="end" font-family="Arial" font-size="20" letter-spacing="4" fill="#304a35">IDENTITY STUDY / 02</text>
+<path d="M70 110H1730" stroke="#304a35" stroke-width="2"/>
+<g filter="url(#shade)"><rect x="72" y="154" width="1050" height="880" rx="8" fill="url(#forest)"/>
+ <circle cx="910" cy="300" r="235" fill="#dafa21" opacity=".12"/>
+ <text x="130" y="240" font-family="Arial" font-size="20" letter-spacing="5" fill="#dafa21">FORM / MATERIAL / EVERYDAY LIVING</text>
+ <text x="126" y="480" font-family="Arial" font-size="220" font-weight="900" letter-spacing="-18" fill="#dafa21">KILN</text>
+ <text x="138" y="535" font-family="Georgia" font-size="30" font-style="italic" fill="#f2efe6">Objects made to be kept.</text>
+ <path d="M140 585H600" stroke="#dafa21" stroke-width="3"/>
+ <text x="138" y="635" font-family="Arial" font-size="21" letter-spacing="3" fill="#f2efe6">SMALL-BATCH CERAMICS</text>
+ <text x="138" y="674" font-family="Arial" font-size="21" letter-spacing="3" fill="#f2efe6">FOR SLOWER EVERYDAY RITUALS</text>
+ <g transform="translate(710 320)">
+  <ellipse cx="170" cy="550" rx="190" ry="26" fill="#041b12" opacity=".5"/>
+  <path d="M135 105C85 110 75 190 79 270C82 375 45 415 57 477C67 530 111 550 181 550C251 550 295 530 305 477C317 415 280 375 283 270C287 190 277 110 227 105Z" fill="url(#clay)" stroke="#e1ceb0" stroke-width="4"/>
+  <path d="M142 106V62Q181 46 220 62V106" fill="#a38b70" stroke="#e1ceb0" stroke-width="4"/>
+  <ellipse cx="181" cy="62" rx="39" ry="12" fill="#6a5642" stroke="#e1ceb0" stroke-width="4"/>
+  <path d="M104 210Q180 238 259 210M91 330Q183 360 276 330" fill="none" stroke="#735d46" stroke-width="5" opacity=".6"/>
+  <path d="M116 130Q160 143 205 132" fill="none" stroke="#f5e6cc" stroke-width="3" opacity=".7"/>
+ </g>
+ <text x="132" y="955" font-family="Arial" font-size="19" letter-spacing="4" fill="#dafa21">A CONSIDERED OBJECT, A QUIETER MOMENT.</text>
+</g>
+<g transform="translate(1172 154)">
+ <text x="0" y="22" font-family="Arial" font-size="19" letter-spacing="5" fill="#687e39">THE BRAND SYSTEM</text>
+ <text x="0" y="84" font-family="Arial" font-size="54" font-weight="800" fill="#173c2a">Made by hand.</text><text x="0" y="144" font-family="Arial" font-size="54" font-weight="800" fill="#829b26">Made to last.</text>
+ <text x="0" y="195" font-family="Arial" font-size="21" fill="#5a6256">A warm, tactile system with a confident</text><text x="0" y="226" font-family="Arial" font-size="21" fill="#5a6256">visual signature and quiet detail.</text>
+ <g transform="translate(0 270)" filter="url(#shade)"><rect width="540" height="205" rx="6" fill="#e8e1d0"/><rect x="20" y="20" width="500" height="165" rx="4" fill="#f5f0e4" stroke="#c8c0ae"/><text x="270" y="110" text-anchor="middle" font-family="Arial" font-size="90" font-weight="900" letter-spacing="-8" fill="#193f2c">KILN</text><text x="270" y="150" text-anchor="middle" font-family="Georgia" font-size="17" font-style="italic" fill="#6d7059">ceramics &amp; objects</text></g>
+ <g transform="translate(0 510)"><rect width="258" height="250" rx="6" fill="#dafa21"/><text x="20" y="34" font-family="Arial" font-size="15" letter-spacing="3" fill="#153a28">PACKAGING / 01</text><rect x="44" y="66" width="170" height="140" rx="4" fill="#f4efdf" stroke="#cfceb3"/><text x="129" y="146" text-anchor="middle" font-family="Arial" font-size="40" font-weight="900" fill="#153a28">KILN</text><text x="129" y="172" text-anchor="middle" font-family="Arial" font-size="13" fill="#153a28">HANDMADE OBJECTS</text></g>
+ <g transform="translate(282 510)"><rect width="258" height="250" rx="6" fill="#d9d0bd"/><text x="20" y="34" font-family="Arial" font-size="15" letter-spacing="3" fill="#31503b">STATIONERY / 02</text><rect x="22" y="72" width="214" height="138" rx="3" fill="#f8f4e8"/><text x="42" y="130" font-family="Arial" font-size="30" font-weight="900" fill="#183f2d">KILN.</text><text x="42" y="158" font-family="Arial" font-size="12" letter-spacing="2" fill="#66705b">OBJECTS FOR EVERYDAY</text></g>
+ <text x="0" y="824" font-family="Arial" font-size="17" letter-spacing="4" fill="#687e39">PALETTE</text><rect x="0" y="846" width="112" height="52" rx="4" fill="#dafa21"/><rect x="124" y="846" width="112" height="52" rx="4" fill="#143b29"/><rect x="248" y="846" width="112" height="52" rx="4" fill="#f2efe6" stroke="#d0c8b8"/><rect x="372" y="846" width="112" height="52" rx="4" fill="#171a15"/><text x="0" y="926" font-family="Arial" font-size="14" fill="#60665e">ACID LIME</text><text x="124" y="926" font-family="Arial" font-size="14" fill="#60665e">FOREST</text><text x="248" y="926" font-family="Arial" font-size="14" fill="#60665e">CHALK</text><text x="372" y="926" font-family="Arial" font-size="14" fill="#60665e">INK</text>
+</g>
+<text x="76" y="1138" font-family="Arial" font-size="18" letter-spacing="4" fill="#304a35">BRAND IDENTITY / PACKAGING / STATIONERY / DIGITAL</text>
+<text x="1724" y="1138" text-anchor="end" font-family="Arial" font-size="18" letter-spacing="3" fill="#304a35">VISHESH SACHAN</text>
+</svg>
