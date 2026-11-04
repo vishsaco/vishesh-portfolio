@@ -4,7 +4,7 @@ const studies = {
     name:"TOO MUCH TO WATCH", eyebrow:"01 / EDITORIAL IDENTITY", subtitle:"A festival identity for the age of endless watching.",
     intro:"A self-initiated concept for an independent film, streaming and screen-culture festival. The visual system turns the feeling of having too much to watch into something energetic, playful and easy to recognise.",
     type:"Festival identity / concept study", role:"Art direction, graphic design", scope:"Print, social, event touchpoints",
-    image:"project-1.webp",alt:"Too Much To Watch concept board showing the festival poster, ticket, programme booklet, social tiles, tote and wayfinding.",caption:"THE IDENTITY IN USE / CONCEPT APPLICATION BOARD",
+    image:"project-1.svg",alt:"Too Much To Watch concept board showing the festival poster, ticket, programme booklet, social tiles, tote and wayfinding.",caption:"THE IDENTITY IN USE / CONCEPT APPLICATION BOARD",
     briefTitle:"Make the overload feel exciting.",
     brief:"The creative challenge was to build a recognisable festival world around a familiar screen-culture feeling: too many films, shows and things competing for our attention. Instead of treating that overload as a problem, the concept embraces it with oversized lettering, playful shapes and a vivid colour contrast.",
     solution:"The identity pairs an expressive, inflated display style with compact supporting information. A deep teal ground gives the system structure, while saturated pink shapes bring movement and personality. The same language is carried across the main poster, ticket, programme booklet, social tiles, tote and directional signage.",
@@ -19,7 +19,7 @@ const studies = {
     name:"KILN", eyebrow:"02 / BRAND SYSTEM", subtitle:"A contemporary identity for ceramics and everyday objects.",
     intro:"A self-initiated concept brand system for a small ceramics and homeware studio. The direction balances the irregular beauty of handmade objects with a confident, contemporary visual identity.",
     type:"Lifestyle / product branding", role:"Brand identity, art direction", scope:"Packaging, print, digital",
-    image:"project-2.webp",alt:"KILN ceramics concept board showing wordmark, clay objects, packaging, tissue, stationery, tote, website and social applications.",caption:"BRAND SYSTEM / PACKAGING AND DIGITAL APPLICATIONS",
+    image:"project-2.svg",alt:"KILN ceramics concept board showing wordmark, clay objects, packaging, tissue, stationery, tote, website and social applications.",caption:"BRAND SYSTEM / PACKAGING AND DIGITAL APPLICATIONS",
     briefTitle:"Give a handmade studio a distinct voice.",
     brief:"The goal was to create a brand that could sit naturally beside sculptural ceramics and useful home objects. It needed to feel tactile and crafted, but not rustic or overly delicate. The identity had to work at small sizes on product labels as well as across larger packaging and digital surfaces.",
     solution:"A strong rounded wordmark is paired with a small maker's-mark symbol. Acid lime brings a recognisable flash of energy, while forest green and warm chalk keep the system grounded. Kraft textures and simple layouts let the products remain the hero.",
@@ -34,7 +34,7 @@ const studies = {
     name:"AFTERHOURS", eyebrow:"03 / CULTURE & LIFESTYLE", subtitle:"A listening-bar identity built around music, ritual and atmosphere.",
     intro:"A self-initiated concept identity for a late-night vinyl listening bar. It uses a restrained, atmospheric direction to balance the energy of nightlife with the ritual and intimacy of listening to records.",
     type:"Hospitality / culture branding", role:"Art direction, identity design", scope:"Campaign, print, merchandise",
-    image:"project-3.webp",alt:"AFTERHOURS concept board showing record sleeves, membership card, wristband, menu, tote, event poster and signage.",caption:"IDENTITY APPLICATIONS / VINYL, MEMBERSHIP AND ENVIRONMENT",
+    image:"project-3.svg",alt:"AFTERHOURS concept board showing record sleeves, membership card, wristband, menu, tote, event poster and signage.",caption:"IDENTITY APPLICATIONS / VINYL, MEMBERSHIP AND ENVIRONMENT",
     briefTitle:"Design for a place people want to return to.",
     brief:"The brief was to imagine a listening space where records, drinks and conversation are equally important. The identity needed to feel distinctive after dark, but still refined enough to work on menus, membership materials and everyday brand touchpoints.",
     solution:"A midnight-navy and tangerine palette creates a cinematic contrast against warm cream. A crescent-and-groove inspired mark gives the identity a simple symbol, while condensed typography and a more expressive display serif create a balance between atmosphere and clarity.",
@@ -55,7 +55,7 @@ set("eyebrow",p.eyebrow);set("project-title",p.name);set("project-subtitle",p.su
 set("meta-type",p.type);set("meta-role",p.role);set("meta-scope",p.scope);
 set("board-caption",p.caption);set("brief-title",p.briefTitle);set("brief-text",p.brief);set("solution-text",p.solution);
 set("visual-title",p.visualTitle);set("visual-text",p.visual);set("thinking-text",p.thinking);set("takeaway",p.takeaway);
-const image=document.getElementById("board-image");image.src="./"+p.image;image.alt=p.alt;
+const image=document.getElementById("board-image");image.src="./"+p.image;image.alt=p.alt;const boardLink=document.getElementById("board-open");if(boardLink)boardLink.href="./"+p.image;
 const palette=document.getElementById("palette");
 p.palette.forEach(([name,hex])=>{const el=document.createElement("div");el.className="swatch";const swatch=document.createElement("i");swatch.style.backgroundColor=hex;const label=document.createElement("b");label.textContent=name;const code=document.createElement("small");code.textContent=hex;el.append(swatch,label,code);palette.append(el);});
 const list=document.getElementById("deliverables");
