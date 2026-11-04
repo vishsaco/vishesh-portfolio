@@ -98,3 +98,15 @@ background-size:auto,24px 24px,24px 24px,auto;display:flex;align-items:center;ju
 .soft .project-photo{background-position:100% center!important}
 .project-photo>*{display:none!important}
 .model-rotator img{transform-origin:center center}
+
+/* True WebGL avatar viewport: the canvas contains independently modelled 3D geometry */
+.model-rotator{width:92%;height:90%;position:relative;z-index:3;display:flex;align-items:center;justify-content:center;perspective:none}
+.model-rotator canvas{display:block;width:100%;height:100%;position:relative;z-index:2;outline:none}
+.model-rotator .model-fallback{display:none;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center bottom;z-index:1}
+.model-rotator canvas:not(.webgl-ready)+.model-fallback{display:block}
+.model-frame{isolation:isolate}
+.model-orbit{z-index:4;pointer-events:none}
+.model-floor{z-index:1}
+.model-tools{z-index:6}
+@media(max-width:760px){.model-rotator{width:100%;height:88%}}
+@media(max-width:480px){.model-rotator{width:100%;height:88%}}
