@@ -32,10 +32,11 @@ function createAvatar(){
  ball(g,[-.47,1.79,.16],[.08,.12,.075],M.skin,20);ball(g,[.46,1.79,.16],[.08,.12,.075],M.skin,20);
  ball(g,[0,3.13,0],[.14,.16,.14],M.skin2);ball(g,[0,3.12,.01],[.18,.055,.17],M.black);
  // 3D head and ears; actual portrait sits on a curved mesh surface, not a flat rotating card
- const hy=3.48;ball(g,[0,hy,0],[.305,.39,.275],M.skin2,36);
- ball(g,[-.302,3.48,0],[.07,.105,.07],M.skin,20);ball(g,[.302,3.48,0],[.07,.105,.07],M.skin,20);
- ball(g,[0,3.70,-.025],[.324,.245,.29],M.hair,32);ball(g,[0,3.77,.105],[.27,.17,.20],M.hair2,28);
- for(let i=0;i<38;i++){const a=i*2.399963,u=((i*17)%37)/37;ball(g,[Math.cos(a)*(.22+u*.07),3.76+Math.sin(i*1.7)*.05,Math.sin(a)*(.18+u*.07)],[.045,.04,.045],i%4===0?M.hair2:M.hair,12);}
+ const headG=new THREE.Group();headG.position.y=3.13;headG.rotation.y=Math.PI;g.add(headG);
+ const hy=3.48;ball(headG,[0,hy-3.13,0],[.305,.39,.275],M.skin2,36);
+ ball(headG,[-.302,3.48-3.13,0],[.07,.105,.07],M.skin,20);ball(headG,[.302,3.48-3.13,0],[.07,.105,.07],M.skin,20);
+ ball(headG,[0,3.70-3.13,-.025],[.324,.245,.29],M.hair,32);ball(headG,[0,3.77-3.13,.105],[.27,.17,.20],M.hair2,28);
+ for(let i=0;i<38;i++){const a=i*2.399963,u=((i*17)%37)/37;ball(headG,[Math.cos(a)*(.22+u*.07),3.76-3.13+Math.sin(i*1.7)*.05,Math.sin(a)*(.18+u*.07)],[.045,.04,.045],i%4===0?M.hair2:M.hair,12);}
  const photo=new Image();photo.onload=()=>{const c=document.createElement("canvas");c.width=c.height=512;const x=c.getContext("2d");x.drawImage(photo,0,0,photo.width,photo.height*.78,0,0,512,512);const tex=new THREE.CanvasTexture(c);tex.colorSpace=THREE.SRGBColorSpace;tex.anisotropy=8;
   const geo=new THREE.PlaneGeometry(.49,.70,20,24),p=geo.attributes.position;for(let i=0;i<p.count;i++){const xx=p.getX(i);p.setZ(i,.055*(1-(xx/.245)**2));}geo.computeVertexNormals();
   const face=new THREE.Mesh(geo,new THREE.MeshStandardMaterial({map:tex,transparent:true,alphaTest:.04,roughness:1,side:THREE.DoubleSide,depthWrite:false}));face.position.set(0,hy-.005,.252);face.renderOrder=3;g.add(face);
@@ -52,7 +53,7 @@ function start(){
  const key=new THREE.DirectionalLight(0xffe3e9,3.1);key.position.set(-3,7,5);scene.add(key);
  const fill=new THREE.DirectionalLight(0x9caeff,1.25);fill.position.set(4,3,-4);scene.add(fill);
  const rim=new THREE.PointLight(0xff3f89,2,8);rim.position.set(-2,2.8,-2);scene.add(rim);
- avatar=createAvatar();avatar.position.y=-.08;scene.add(avatar);
+ avatar=createAvatar();avatar.position.y=-.08;avatar.rotation.y=Math.PI;scene.add(avatar);
  const resize=()=>{const w=frame.clientWidth,h=frame.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();};
  new ResizeObserver(resize).observe(frame);resize();if(fallback)fallback.style.display="none";canvas.classList.add("webgl-ready");
  paused=matchMedia("(prefers-reduced-motion: reduce)").matches;if(paused){spinIcon.textContent="▶";spinLabel.textContent="AUTO PAUSED";}
