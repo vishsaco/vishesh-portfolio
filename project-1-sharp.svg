@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1200" viewBox="0 0 1800 1200">
+<defs>
+ <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#d9d4cb" stroke-width="1"/></pattern>
+ <linearGradient id="pink" x2="1" y2="1"><stop stop-color="#ff95ba"/><stop offset="1" stop-color="#ed3d88"/></linearGradient>
+ <linearGradient id="teal" x2="1" y2="1"><stop stop-color="#104b45"/><stop offset="1" stop-color="#052d2c"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="16" stdDeviation="16" flood-color="#132c29" flood-opacity=".17"/></filter>
+</defs>
+<rect width="1800" height="1200" fill="#f5f0e9"/><rect width="1800" height="1200" fill="url(#grid)" opacity=".65"/>
+<text x="76" y="72" font-family="Arial" font-size="22" letter-spacing="6" fill="#16413c">INDEPENDENT FILM &amp; SCREEN CULTURE FESTIVAL</text>
+<text x="1720" y="72" text-anchor="end" font-family="Arial" font-size="20" letter-spacing="4" fill="#16413c">IDENTITY STUDY / 01</text>
+<path d="M70 110H1730" stroke="#16413c" stroke-width="2"/>
+<g filter="url(#shadow)">
+ <rect x="74" y="154" width="1002" height="882" rx="9" fill="url(#teal)"/>
+ <circle cx="936" cy="262" r="190" fill="url(#pink)" opacity=".95"/>
+ <circle cx="145" cy="918" r="230" fill="#f9a4c4" opacity=".17"/>
+ <path d="M112 738C354 630 510 817 736 688S927 674 1055 742" fill="none" stroke="#ff8eb6" stroke-width="5" opacity=".7"/>
+ <text x="132" y="222" font-family="Arial" font-size="20" fill="#ffb6ce" letter-spacing="5">A FESTIVAL FOR THE INFINITE SCROLL</text>
+ <text x="124" y="425" font-family="Arial" font-size="154" font-weight="900" letter-spacing="-9" fill="#ff9fc0">TOO MUCH</text>
+ <text x="124" y="584" font-family="Arial" font-size="172" font-weight="900" letter-spacing="-12" fill="#ff9fc0">TO</text>
+ <text x="124" y="750" font-family="Arial" font-size="172" font-weight="900" letter-spacing="-11" fill="#ff9fc0">WATCH</text>
+ <text x="132" y="854" font-family="Arial" font-size="26" fill="#fff5ee" letter-spacing="3">FILMS / SERIES / CULTURE / CONVERSATION</text>
+ <text x="132" y="910" font-family="Arial" font-size="23" fill="#fff5ee">03—07 OCTOBER 2026  ·  CITY ARTS CINEMA</text>
+ <rect x="132" y="954" width="260" height="54" rx="27" fill="#ff9fc0"/><text x="262" y="990" font-family="Arial" font-size="20" font-weight="700" text-anchor="middle" fill="#073632">GET YOUR PASS ↗</text>
+</g>
+<g transform="translate(1130 154)">
+ <text x="0" y="22" font-family="Arial" font-size="19" letter-spacing="5" fill="#8f3861">THE VISUAL SYSTEM</text>
+ <text x="0" y="74" font-family="Arial" font-size="58" font-weight="800" fill="#123f39">Built to be</text><text x="0" y="135" font-family="Arial" font-size="58" font-weight="800" fill="#123f39">impossible to</text><text x="0" y="196" font-family="Arial" font-size="58" font-weight="800" fill="#e94e89">scroll past.</text>
+ <text x="0" y="250" font-family="Arial" font-size="22" fill="#5a625b">Expressive typography meets a flexible</text><text x="0" y="282" font-family="Arial" font-size="22" fill="#5a625b">festival toolkit across every touchpoint.</text>
+ <g transform="translate(0 330)" filter="url(#shadow)"><rect width="540" height="205" rx="8" fill="#ff9fc0"/><text x="26" y="42" font-family="Arial" font-size="16" font-weight="700" fill="#17413b" letter-spacing="3">ENTRY PASS / 0018</text><text x="26" y="118" font-family="Arial" font-size="59" font-weight="900" fill="#083833">TOO MUCH</text><text x="26" y="173" font-family="Arial" font-size="59" font-weight="900" fill="#083833">TO WATCH</text><path d="M445 0V205" stroke="#15443f" stroke-width="2" stroke-dasharray="7 8"/><text x="474" y="110" transform="rotate(90 474 110)" text-anchor="middle" font-family="Arial" font-size="15" fill="#16413c">ADMIT ONE</text></g>
+ <g transform="translate(0 575)"><rect width="258" height="260" rx="7" fill="#073632"/><text x="20" y="34" font-family="Arial" font-size="15" fill="#ffabc8" letter-spacing="3">SOCIAL / 01</text><text x="20" y="132" font-family="Arial" font-size="47" font-weight="900" fill="#ffabc8">TOO</text><text x="20" y="181" font-family="Arial" font-size="47" font-weight="900" fill="#ffabc8">MUCH</text><text x="20" y="230" font-family="Arial" font-size="47" font-weight="900" fill="#ffabc8">TO SEE.</text></g>
+ <g transform="translate(282 575)"><rect width="258" height="260" rx="7" fill="#ef5a93"/><circle cx="190" cy="80" r="82" fill="#ffb5ce"/><text x="20" y="165" font-family="Arial" font-size="27" font-weight="900" fill="#083a35">WHAT'S</text><text x="20" y="198" font-family="Arial" font-size="27" font-weight="900" fill="#083a35">ON YOUR</text><text x="20" y="231" font-family="Arial" font-size="27" font-weight="900" fill="#083a35">WATCHLIST?</text></g>
+ <text x="0" y="900" font-family="Arial" font-size="17" letter-spacing="4" fill="#8f3861">PALETTE</text><rect x="0" y="922" width="112" height="54" rx="5" fill="#f04d91"/><rect x="124" y="922" width="112" height="54" rx="5" fill="#073632"/><rect x="248" y="922" width="112" height="54" rx="5" fill="#f5f0e9" stroke="#c9c1b5"/><text x="0" y="1005" font-family="Arial" font-size="15" fill="#60665e">ELECTRIC PINK</text><text x="124" y="1005" font-family="Arial" font-size="15" fill="#60665e">DEEP TEAL</text><text x="248" y="1005" font-family="Arial" font-size="15" fill="#60665e">WARM PAPER</text>
+</g>
+<text x="76" y="1138" font-family="Arial" font-size="18" letter-spacing="4" fill="#16413c">ART DIRECTION / TYPOGRAPHY / PRINT / SOCIAL / EVENT GRAPHICS</text>
+<text x="1724" y="1138" text-anchor="end" font-family="Arial" font-size="18" letter-spacing="3" fill="#16413c">VISHESH SACHAN</text>
+</svg>
