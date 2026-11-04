@@ -89,3 +89,12 @@ background-size:auto,24px 24px,24px 24px,auto;display:flex;align-items:center;ju
 @media(max-width:480px){.resume-grid{grid-template-columns:1fr 1.35fr;gap:3%}.model-frame{height:350px}.model-caption{font-size:6px}.right-column{grid-template-columns:1fr 1fr}.model-rotator{width:95%}.model-tools button:nth-child(2) b{font-size:9px}.hello h2{font-size:34px}.hello p{font-size:9px}.education h2{font-size:22px}.timeline article b{font-size:10px}.timeline p,.timeline small{font-size:8px}.skills h2,.experience h2{font-size:24px}.tool-icons{gap:5px}.tool{width:37px;height:36px}.tool b{font-size:20px}.skill-list{font-size:8px}.experience ul{font-size:8px}.band-name{font-size:8vw}.hero-portrait{width:48%;height:255px}.torn-band{height:215px}.project-photo{height:120px}.maggi-pack{padding-top:13px}.maggi-pack strong{font-size:18px}.maggi-pack span{font-size:14px}.phone-screen{font-size:12px}.building-sign{font-size:12px}.tag{font-size:17px;padding:12px 0}.project-name{font-size:9px}.project-name b{font-size:11px}.contact-item:nth-of-type(3){display:none}}
 @media(prefers-reduced-motion:reduce){.model-rotator img{animation:none!important;transform:rotateY(-20deg)}.project-card{transition:none}}
 @media print{.noise{display:none}.model-rotator img{animation:none}.poster{box-shadow:none}.project-card{break-inside:avoid}}
+
+/* Reference-matched photo panels */
+.project-photo{background-image:url("./project-strip.webp")!important;background-size:400% 100%!important;background-repeat:no-repeat!important}
+.maggi .project-photo{background-position:0% center!important}
+.wee .project-photo{background-position:33.3333% center!important}
+.property .project-photo{background-position:66.6667% center!important}
+.soft .project-photo{background-position:100% center!important}
+.project-photo>*{display:none!important}
+.model-rotator img{transform-origin:center center}
